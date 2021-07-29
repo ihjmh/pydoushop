@@ -34,7 +34,6 @@ class DouShopProxy(ConfDoushop):
         self.async_client = AsyncHTTPClient()
 
         """
-        the get_access_token recv is: {'data': {'access_token': '54aab0dc-9b7a-4320-952f-57187498dd80', 'expires_in': 242893, 'refresh_token': '9890778e-6269-47d0-9da5-36c6c965360e', 'scope': 'SCOPE', 'shop_id': 7743045, 'shop_name': 'H的礼物清单'}, 'err_no': 0, 'log_id': '2021072522484501013113214408A67B55', 'message': 'success'}
         """
 #         IOLoop.current().spawn_callback(self.auto_update_token)
 #         IOLoop.current().spawn_callback(self.sync_orders)
@@ -65,7 +64,6 @@ class DouShopProxy(ConfDoushop):
     async def get_access_token(self):
         """
         首次获取token
-        the jdata is: {'data': {'access_token': '54aab0dc-9b7a-4320-952f-57187498dd80', 'expires_in': 604800, 'refresh_token': '9890778e-6269-47d0-9da5-36c6c965360e', 'scope': 'SCOPE', 'shop_id': 7743045, 'shop_name': 'H的礼物清单'}, 'err_no': 0, 
         """
         if debug:
             self.access_token = "fc04a1f7-d341-49fd-9112-492830508e68"
